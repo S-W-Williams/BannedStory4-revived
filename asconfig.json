@@ -1,0 +1,21 @@
+{
+	"config": "air",
+	"compilerOptions": {
+		"source-path": [
+			"src"
+		],
+		"library-path": [
+			"libs"
+		],
+		"output": "bin/bannedstory4-revived.swf",
+		"default-background-color": "#ffffff",
+		"default-frame-rate": 60,
+		"default-size": {
+			"width": 900,
+			"height": 900
+		},
+		"swf-version": 10
+	},
+	"application": "src/bannedstory4-revived-app.xml",
+	"mainClass": "BS5"
+}
