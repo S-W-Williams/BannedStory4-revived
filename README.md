@@ -3,7 +3,7 @@ This project is an effort to revive the MapleStory design simulator program, Ban
 
 BannedStory 4 was a program way ahead of its time and loved by thousands of users. Unfortunately, the website hosting the application was shutdown and the developer of the project has been uncontactable since. An offline distributable of the program was never made, and the application used the Adobe Flash platform, which reached end of life in 2020 with modern browsers no longer supporting Flash Player at all.
 
-However, thanks to the effort from the team behind [ruffle](https://github.com/ruffle-rs/ruffle/), we now have an easy and distributable way to run Flash programs again.
+Fortunately, thanks to the effort from the team behind [ruffle](https://github.com/ruffle-rs/ruffle/), we now have an easy and distributable way to run Flash programs again.
 
 The revived program will be hosted at http://bannedstory4.com/
 
@@ -13,9 +13,14 @@ So far I have been able to get the SWF running and circumvent the built in authe
 
 The remaining work required is re-creating its asset data. The program was exclusively hosted on maplesimulator.com, and all of its assets were stored on it's webserver. 
 
-I have been able to successfully decompile the code using [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler), but discovered that BannedStory 4 uses multple custom data format's that are interdependent on each other, so work is required to reverse engineer the formats and then convert existing MapleStory data into BannedStory 4 formats.
+I have been able to successfully decompile the code using [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler), but discovered that BannedStory 4 uses multple custom data format's that are interdependent on each other, so now we need to 
 
-### What progress have we made so far regarding its data format?
+1. correctly reverse engineer the formats
+2. convert existing MapleStory data into BannedStory 4 formats.
+
+So for I have been able to create test data that is loadable by the program, but more data and testing is needed before we can be sure the formats are correct.
+
+### What do we know so far regarding its data format?
 BannedStory 4 requires assets in the form of 3 files formats:
 - .dat 
 - .pak
