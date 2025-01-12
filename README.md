@@ -13,7 +13,7 @@ So far I have been able to get the SWF running and circumvent the built in authe
 
 The remaining work required is re-creating its asset data. The program was exclusively hosted on maplesimulator.com, and all of its assets were stored on it's webserver, so unfortunately we don't have access to them.
 
-I have been able to successfully decompile the code using [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler), but discovered that BannedStory 4 uses multple custom data format's that are interdependent on each other, so now we need to 
+I have been able to successfully decompile the code using [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler), which you can find in `src`, but discovered that BannedStory 4 uses multple custom data formats that are inter-dependent on each other, so now we need to 
 
 1. correctly reverse engineer the formats
 2. convert existing MapleStory data from .wz files into BannedStory 4 formats.
