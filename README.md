@@ -11,12 +11,12 @@ The revived program will be hosted at http://bannedstory4.com/
 
 So far I have been able to get the SWF running and circumvent the built in authentication so that the program starts and attempts to load assets.
 
-The remaining work required is re-creating its asset data. The program was exclusively hosted on maplesimulator.com, and all of its assets were stored on it's webserver. 
+The remaining work required is re-creating its asset data. The program was exclusively hosted on maplesimulator.com, and all of its assets were stored on it's webserver, so unfortunately we don't have access to them.
 
 I have been able to successfully decompile the code using [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler), but discovered that BannedStory 4 uses multple custom data format's that are interdependent on each other, so now we need to 
 
 1. correctly reverse engineer the formats
-2. convert existing MapleStory data into BannedStory 4 formats.
+2. convert existing MapleStory data from .wz files into BannedStory 4 formats.
 
 So for I have been able to create test data that is loadable by the program, but more data and testing is needed before we can be sure the formats are correct.
 
@@ -98,3 +98,4 @@ Where:
 - position is offset in thumbnail data
 - length is size of thumbnail data in hex
 ```
+
