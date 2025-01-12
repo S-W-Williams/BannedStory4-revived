@@ -99,3 +99,7 @@ Where:
 - length is size of thumbnail data in hex
 ```
 
+## Developer Setup
+To run the SWF locally and test assets, included in this repo in `flash-debugger` folder is the portable .exe for Flash Player 32. 
+
+Flash Player won't let an SWF read local files due to security restrictions. Normally we could change this setting in the Flash Player Global Security Settings, but since that is no longer available, you'll need to run the program, close it, then in `%appdata%\Macromedia\Flash Player\macromedia.com\support\flashplayer\sys`, replace the `settings.sol` file with the one included in this repo. This will enable developer settings for SWF files.
